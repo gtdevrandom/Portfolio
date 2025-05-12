@@ -199,3 +199,55 @@ footer {
     margin-top: 0; /* Retiré pour le sticky bottom */
 }
 
+@media screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  .langage-card {
+    width: 120px;
+    height: 150px;
+  }
+
+  .contact-container {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tab {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .langage-card {
+    width: 100px;
+    height: 130px;
+  }
+
+  .contact-container {
+    margin: 15px;
+    font-size: 0.95em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
