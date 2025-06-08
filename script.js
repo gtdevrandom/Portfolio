@@ -14,3 +14,10 @@ function showTab(tabId) {
     const activeTab = document.querySelector(`button[onclick="showTab('${tabId}')"]`);
     activeTab.style.backgroundColor = '#555';
 }
+
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register (
+          '/github-page-pwa/sw.js',
+          {scope: '/github-page-pwa/'}
+        )
+      }
